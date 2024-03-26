@@ -1,0 +1,269 @@
+body{
+    background-color:black;
+    margin: 0%;
+    padding: 0%;
+}
+/* all style about header */
+nav{
+    padding-top: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-left{
+    justify-content: space-between;
+    display: flex;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav .nav-left .nav-h1, .nav-h1 h1{
+    margin: 0%;
+    padding-top: 0%;
+    color: orangered;
+    font-size: 45px;
+    font-family:sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav .nav-right input{
+    padding: 12px;
+    border-radius: 50px;
+    opacity: 0.6;
+}
+
+/* for search button */
+nav .nav-search input{
+    border-radius: 50px;
+    border: 2px solid orangered;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    background: none;
+    color: orangered;
+    
+}
+
+.menu{
+    text-align: center;
+}
+
+/* for all button in the navigation */
+.menu ul a{
+    text-decoration: none;
+    color: white;
+    font-family:sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px;
+    transition: 0.6s;
+}
+.menu ul a:hover{
+    background-color:orangered ;
+    border-bottom: solid orangered 2px;
+    cursor: pointer;
+}
+.menu li a[class=active]{
+    color:white ;
+    background-color: orangered;
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.container{
+    margin: 0%;
+    padding: 12px;
+}
+.container .content .content-welcome{
+   padding:2% 20%; 
+   
+}
+
+.content-welcome img{
+    position: absolute;
+    z-index: -8;
+    top: 2%;
+    left: 0%;
+    right: 2%;
+    width: 100%;
+}
+.content-welcome{
+    /* background-color: black; */
+    color: orangered;
+    text-align: center;
+}
+.content-welcome h3{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0%;
+}
+.content-welcome p a{
+    font-family:sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: orangered;
+    transition: 0.6s;
+ 
+    padding-bottom: 12px;
+}
+
+
+
+
+
+
+
+.content-welcome p a:hover{
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    transform: scale(1.09);
+}
+.item{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+}
+.item img{
+    height: 400px;
+}
+.item .item-left,.item-center,.item-right{
+    border: none;
+    border-radius: 10px;
+    box-shadow: -2px -2px 30px orangered;
+    text-align: center;
+    font-family:sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: none;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    color: white;
+    margin-bottom: 50px;
+    padding: 0%;
+}
+.item .item-left:hover,.item-center:hover,.item-right:hover{
+    box-shadow: 0 0 60px orangered;
+    transition: 0.6s;
+}
+.item a{
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.7S;
+}
+.item a:hover{
+    background-color: white;
+    color: orangered;
+    padding: 15px;
+    border: solid orangered 2px;
+}
+.content .item img{
+    margin: 0%;
+    border-radius: 10px;
+    transition: 0.6s;
+    box-sizing: border-box;
+    width: 100%;
+}
+.content .item img:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+/* style for footer at the botton of the wb page */
+footer{
+    background-color: black;
+    border-top: solid gray 1px;
+    height: 300px;
+    color: white;
+    /* clear: both; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer h3{
+    color: orangered;
+    text-align: center;
+}
+footer .footer1 , .footer2 , .footer3{
+    float: left;
+    width: 32%;
+    padding:0 8px;
+}
+.footer3 form input[type=email]{
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 5px;
+    background-color: black;
+    border-bottom: solid white 3px;
+    color: white;
+    font-size: 20px;
+}
+
+/* style for form in the footat the botton of the web page */
+.footer3 form input[type=submit]{
+    width: 30%;
+    color: white;
+    border-radius: 12px;
+    padding: 12px;
+    border: none;
+    background-color: orangered;
+    font-size: 15px;
+    transition: 0.6s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer3 form input[type=submit]:hover{
+    background-color: rgb(247, 105, 53);
+    cursor: pointer;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer3 form{
+    margin-top: 35px;
+}
+.footer3 form img{
+    padding: 15px;
+}
+.footer1 p{
+    padding: 0 70px;
+    margin-top: 35px;
+}
+.footer1 p img{
+    width: 5%;
+    padding-right: 12px;
+}
+.footer2 p{
+    padding: 0 70px;
+    margin-top: 35px;
+}
+.footer2 p button{
+    padding: 12px;
+    background-color: orangered;
+    border-radius: 12px;
+    border: none;
+}
+.footer2 P button a{
+    color: white;
+    text-decoration: none;
+}
+#end{
+    width: 100;
+    border-top: solid white;
+    margin-top: 20px;
+    padding-top: 12px;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
